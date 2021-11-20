@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Formulário de Inscrição</title>
     </head>
-    <body>
+    <body style="width: fit-content;">
         <form action="">
             <fieldset>
                 <legend>Formulário de Inscrição</legend>
@@ -12,13 +12,13 @@
                     <label>Nome</label>
                     <input type="text" 
                         id="nome" 
-                        value="Insira o seu nome"/>
+                        placeholder="Insira o seu nome"/>
                 </p>
                 <p>
                     <label>Sobrenome</label>
                     <input type="text" 
                         id="sobrenome" 
-                        value="Insira o seu sobrenome"/>
+                        placeholder="Insira o seu sobrenome"/>
                 </p>
                 <p>
                     <label>Idade</label>
@@ -29,7 +29,7 @@
                     <label for="email">E-mail</label>
                     <input type="email" 
                         id="email" 
-                        value="Insira o seu e-mail"/>
+                        placeholder="Insira o seu e-mail"/>
                 </p>
                 <p>
                     <label>Sexo</label>
@@ -37,15 +37,20 @@
                         name="sexo"
                         id="masc"
                         value="masculino"
-                        checked="checked"/>Masculino
+                        checked="checked"/>
+                    <label for="masc">Masculino</label>
+                    
                     <input type="radio"
                     name="sexo"
                     id="fem"
-                    value="feminino"/>Feminino
+                    value="feminino"/>
+                <label for="fem">Feminino</label>
                 </p>
                 <p>
+                    <!-- ver como ter botão para adicionar arquivo do tipo imagem -->
                     <label>Foto</label>
-                    <!--ver como ter botão para adicionar arquivo do tipo imagem-->
+                    <input type="file" id="foto" accept="image/jpeg, image/png">
+                    
                 </p>
                 <p>
                     <label>País</label>
@@ -304,7 +309,7 @@
                     </select>
                 </p>
                 <p>
-                    <label>Sua(s) linguagem(ns) preferida(s)</label>
+                    <label>Sua(s) linguagem(ns) preferida(s)</label><br>
                     <select id="linguagens" multiple>
                         <option value="c">C</option>
                         <option value="c++">C++</option>
@@ -320,17 +325,20 @@
                     <label>Áreas de Atuação</label>
                     <input type="checkbox"
                         id="chkComp"
-                        value="computacao"/>Computação
+                        value="computacao"/>
+                        <label for="chkComp">Computação</label>
                     <input type="checkbox"
                         id="chkGestao"
-                        value="gestao"/>Gestão
+                        value="gestao"/>
+                        <label for="chkGestao">Gestão</label>
                     <input type="checkbox"
                         id="chkPedag"
-                        value="pedagogia"/>Pedagogia
+                        value="pedagogia"/>
+                        <label for="chkPedag">Pedagogia</label>
 
                 </p>
                 <p>
-                    <input type="submit" value="Enviares"/>Enviar
+                    <input type="submit" value="Enviar"/>
                     <input type="reset" value="Limpar"/>
                 </p>
             </fieldset>
