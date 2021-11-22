@@ -4,59 +4,64 @@
         <meta charset="UTF-8">
         <title>Formulário de Inscrição</title>
     </head>
-    <body style="width: fit-content;">
+    <body style="width: 550px;">
         <form action="">
             <fieldset>
                 <legend>Formulário de Inscrição</legend>
-                <p>
-                    <label>Nome</label>
-                    <input type="text" 
+                <table>
+                <tr>
+                    <td align="left" width="140">Nome</td>
+                    <td align="left"><input type="text" 
                         id="nome" 
                         placeholder="Insira o seu nome"/>
-                </p>
-                <p>
-                    <label>Sobrenome</label>
-                    <input type="text" 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sobrenome</td>
+                    <td><input type="text" 
                         id="sobrenome" 
                         placeholder="Insira o seu sobrenome"/>
-                </p>
-                <p>
-                    <label>Idade</label>
-                    <input type="number" 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Idade</td>
+                    <td><input type="number" 
                         id="idade"
                         min="18"
                         max="120"/>
-                </p>
-                <p>
-                    <label for="email">E-mail</label>
-                    <input type="email" 
+                    </td>
+                </tr>
+                <tr>
+                    <td for="email">E-mail</td>
+                    <td><input type="email" 
                         id="email" 
                         placeholder="Insira o seu e-mail"/>
-                </p>
-                <p>
-                    <label>Sexo</label>
-                    <input type="radio"
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sexo</td>
+                    <td>
+                        <label for="masc">Masculino</label>
+                        <input type="radio"
                         name="sexo"
                         id="masc"
                         value="masculino"
                         checked="checked"/>
-                    <label for="masc">Masculino</label>
                     
-                    <input type="radio"
-                    name="sexo"
-                    id="fem"
-                    value="feminino"/>
-                <label for="fem">Feminino</label>
-                </p>
-                <p>
-                    <!-- ver como ter botão para adicionar arquivo do tipo imagem -->
-                    <label>Foto</label>
-                    <input type="file" id="foto" accept="image/jpeg, image/png">
-                    
-                </p>
-                <p>
-                    <label>País</label>
-                    <select id="pais">
+                        <label for="fem">Feminino</label>
+                        <input type="radio"
+                        name="sexo"
+                        id="fem"
+                        value="feminino"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Foto</td>
+                    <td><input type="file" id="foto" accept="image/jpeg, image/png"></td>
+                </tr>
+                <tr>
+                    <td>País</td>
+                    <td><select id="pais">
                         <option value="Afeganistão">AF - Afeganistão</option>
                         <option value="África do Sul">ZA - África do Sul</option>
                         <option value="Albânia">AL - Albânia</option>
@@ -309,10 +314,11 @@
                         <option value="Zâmbia">ZM - Zâmbia</option>
                         <option value="Zimbábue">ZW - Zimbábue</option>
                     </select>
-                </p>
-                <p>
-                    <label>Sua(s) linguagem(ns) preferida(s)</label><br>
-                    <select id="linguagens" multiple>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sua(s) linguagem(ns) preferida(s)</td>
+                    <td><select id="linguagens" multiple>
                         <option value="c">C</option>
                         <option value="c++">C++</option>
                         <option value="c#">C#</option>
@@ -321,11 +327,12 @@
                         <option value="php">PHP</option>
                         <option value="python">Python</option>
                     </select>
-                    <br>(Para fazer várias escolhas mantenha a tecla CTRL pressionada)
-                </p>
-                <p>
-                    <label>Áreas de Atuação</label>
-                    <input type="checkbox"
+                    (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Áreas de Atuação</td>
+                    <td><input type="checkbox"
                         id="chkComp"
                         value="computacao"/>
                         <label for="chkComp">Computação</label>
@@ -337,12 +344,14 @@
                         id="chkPedag"
                         value="pedagogia"/>
                         <label for="chkPedag">Pedagogia</label>
-
-                </p>
-                <p>
-                    <input type="submit" value="Enviar"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Enviar"/>
                     <input type="reset" value="Limpar"/>
-                </p>
+                    </td>
+                </tr>
+                </table>   
             </fieldset>
         </form>
     </body>
